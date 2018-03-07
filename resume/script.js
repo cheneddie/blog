@@ -67,7 +67,7 @@ const infor = {
 })();
 const learningJson = {
   "FreeCodeCamp Front End Certificate": 75,
-  "W3Schools JavaScript Certificate": 50
+  "W3Schools JavaScript Certificate": 85
 };
 const setLearningPercentage = (() => {
   let data = "<h2>keep learning</h2>";
