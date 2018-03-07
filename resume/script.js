@@ -7,7 +7,7 @@ const infor = {
   },
   "Font-End":{
       "React":7,
-      "Bootstraps":9,
+      "Bootstrap":9,
       "jQuery":8,
       "ChromeDeveloper":9.5,
   },
@@ -25,7 +25,7 @@ const infor = {
   },
   "API":{
       "GoogleSheet":9.5,
-      "Youtube":9.5,
+      "Youtube-Data":9.5,
       "LineMessage":9.5,
   },
   "Service":{
