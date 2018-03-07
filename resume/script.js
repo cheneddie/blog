@@ -24,7 +24,7 @@ const infor = {
       "MongoDB":7
   },
   "API":{
-      "GoogleSheet":9.5,
+      "Sheets v4":9.5,
       "Youtube-Data":9.5,
       "LineMessage":9.5,
   },
