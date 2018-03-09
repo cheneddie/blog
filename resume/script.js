@@ -30,7 +30,7 @@ const infor = {
   for (let item in infor) {
     skillsData += `<b class='skills-title'>${item}</b><div class="skills-cate">`;
     for (let i in infor[item]) {
-      skillsData += `<section class="card"><p>${i}</p>`;
+      skillsData += `<section class="card button"><p>${i}</p>`;
       // let index = infor[item][i];
       // let addStarAmount = infor[item][i] >> 0;
       // let starHalf = (index - addStarAmount) % 1;
@@ -64,16 +64,16 @@ const infor = {
   /**
    * 
    */
-  const productsData = {
+  const projectsData = {
     "Line ChatBot 代購":"https://youtu.be/KTePiwAD9Z0",
     "法律教育資訊-法者App":"https://youtu.be/ah5u3L3HKog",
     "Taiwan Festival":"http://www.taiwanfestival.net/20151.html"
   }
-  let products = "<h2>products</h2>";
-  for(let obj in productsData){
-    products+=`<div class="card"><a href=${productsData[obj]} target="_blank">${obj}</a></div>`
+  let projects = "<h2>projects</h2>";
+  for(let obj in projectsData){
+    projects+=`<a class="" href=${projectsData[obj]} target="_blank"><div class="card button">${obj}</div></a>`
   }
-  document.getElementById("products").innerHTML = products;
+  document.getElementById("projects").innerHTML = projects;
   
   
 /**
