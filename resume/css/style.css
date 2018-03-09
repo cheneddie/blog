@@ -66,6 +66,9 @@ header {
   color: #009688;
 }
 /* left side */
+.information-text{
+  text-align: right;
+}
 .icon-text {
   padding: 0.5em 0;
   margin: 0.2em 0;
@@ -138,7 +141,7 @@ margin: 10px;;
 .details .experience span {
   display: grid;
   grid-template-columns: auto auto;
-  grid-column-gap: 50px;
+  grid-column-gap: 10px;
 }
 article ol {
   padding-left: 20px;

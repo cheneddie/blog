@@ -4,52 +4,25 @@ const learningJson = {
     "FreeCodeCamp Front End Certificate": 75,
 };
 const infor = {
-    "Basic Programming":{
-      "Java":7.5,
-      "JavaScript":8
-    },
-    "Font-End":{
-        "React":7,
-        "Bootstrap":9,
-        "jQuery":8,
-        "Chrome_Developer":9.5,
-        "Animate.css":9.5,
-    },
-    "Back-End":{
+  "Front-End":{
+    "JavaScript":8,
+    "React":7,
+    "Bootstrap":9,
+    "jQuery":8,
+  },
+  "Back-End":{
         "NodeJs":6,
         "Express":7.5,
-        "JavaJDBC":7,
     },
     "Mobile":{
         "React_Native":8.5,
     },
-    "DataBase":{
+    "Database":{
         "MySQL":8.5,
         "MongoDB":7
     },
-    "API":{
-        "Sheets_v4":9.5,
-        "Youtube_Data":9.5,
-        "LineMessage":9.5,
-    },
-    "Service":{
-        "AWS_EC2":7.5,
-        "Heroku":9.5,
-        "Twilio":9.5,
-    },
-    "Tools":{
-        "Git":9.5,
-        "Eclipse":9.5,
-        "VSCode":9.5,
-        "Node_Crawler":10,
-        "Cheerio":9.5,
-    },
   }
-  const productsData = {
-    "Line ChatBot 代購":"https://youtu.be/KTePiwAD9Z0",
-    "法律教育資訊-法者App":"https://youtu.be/ah5u3L3HKog",
-    "Taiwan Festival":"http://www.taiwanfestival.net/20151.html"
-  }
+  
 /** 
  * skills section
 */
@@ -91,13 +64,33 @@ const infor = {
   /**
    * 
    */
+  const productsData = {
+    "Line ChatBot 代購":"https://youtu.be/KTePiwAD9Z0",
+    "法律教育資訊-法者App":"https://youtu.be/ah5u3L3HKog",
+    "Taiwan Festival":"http://www.taiwanfestival.net/20151.html"
+  }
   let products = "<h2>products</h2>";
   for(let obj in productsData){
     products+=`<div class="card"><a href=${productsData[obj]} target="_blank">${obj}</a></div>`
   }
   document.getElementById("products").innerHTML = products;
   
-
+  
+/**
+ * 
+ */
+const informationData = {
+  name:"陳瑋棋",
+  age:"29歲",
+  "birth date":"Jun 07 1989",
+  education:"專科"
+  
+}
+let information = "<h2>information</h2>";
+  for(let obj in informationData){
+    information+=`<section class=''><p>${obj}</p><span class="information-text">${informationData[obj]}</span></section>`;
+  }
+  document.getElementById("information").innerHTML = information;
 /**
  * hover animation listener
  * More button
@@ -134,24 +127,17 @@ function addEvent(element, event, callback, capture=false){
  */
 function seeMoreAboutEddie() {
   let state =
-    document.getElementById("before-change-introduction").style.display ===
+    document.getElementById("before-change-experience").style.display ===
     "grid"
       ? "none"
       : "grid";
-  document.getElementById("before-change-introduction").style.display = state;
   document.getElementById("before-change-experience").style.display = state;
   return;
 };
 
-// function dateTramEng() {
+// (function dateTramEng() {
 //   const arr = [
-//     [2017, 11, 2018, 02],
-//     [2017, 05, 2017, 11],
-//     [2015, 09, 2017, 05],
-//     [2015, 02, 2016, 08],
-//     [2013, 04, 2015, 02],
-//     [2012, 03, 2013, 04],
-//     [2011, 09, 2012, 01]
+//     [1989, 06, 2012, 01]
 //   ];
 //   //   Nov 2017 - Feb 2018
 //   //   May 2017 - Nov 2017
@@ -170,4 +156,4 @@ function seeMoreAboutEddie() {
 //         dateb.toLocaleDateString("en-us", options)
 //     );
 //   }
-// }
+// })()
