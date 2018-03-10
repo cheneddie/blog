@@ -33,8 +33,13 @@ body {
   margin: 0;
   border-radius: 8px;
 }
+.card .button {
+  display: inline-grid;
+  text-align: center;
+}
 .card .button:hover {
   background-color: #009688;
+  
   color: #fff;
 }
 /* header */
@@ -159,6 +164,7 @@ article ul {
 }
 .history {
   color: #009688;
+  display: inline;
 }
 #before-change-introduction {
   display: none;
