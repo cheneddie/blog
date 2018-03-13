@@ -34,12 +34,11 @@ body {
   border-radius: 8px;
 }
 .card .button {
-  display: inline-grid;
   text-align: center;
 }
-.card .button:hover {
+.card.button:hover {
   background-color: #009688;
-  
+
   color: #fff;
 }
 /* header */
@@ -69,11 +68,10 @@ header {
   margin: 10% 20%;
 }
 #eddiesay {
-  font-family: "Dancing Script";
   color: #009688;
 }
 /* left side */
-.information-text{
+.information-text {
   text-align: right;
 }
 .icon-text {
@@ -85,7 +83,6 @@ header {
   grid-area: introduction;
   padding-right: 2vw;
 }
-
 .left-section section {
   text-align: left;
   display: grid;
@@ -93,7 +90,7 @@ header {
   grid-template-columns: auto auto;
 }
 #learning section {
-  grid-template-columns: auto ;
+  grid-template-columns: auto;
 }
 #skills .skills-cate {
   margin: 10px;
@@ -115,7 +112,8 @@ header {
   text-align: right;
 }
 .left-section .card {
-margin: 10px;;
+  margin: 10px;
+  display: inline-grid;
 }
 .left-section section div {
   color: gold;
@@ -226,7 +224,7 @@ article ul {
   body {
     margin: 0;
   }
-  #before-change-experience{
+  #before-change-experience {
     display: block;
   }
 }

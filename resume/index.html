@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing Script'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Euphoria Script'>
     <title>陳瑋棋Eddie履歷</title>
 </head>
 
@@ -24,7 +22,7 @@
             </figure>
             <figure class="motto">
                 <h1>Chen Eddie 陳瑋棋</h1>
-                <figcaption>Front-End Developer、Project Manager</figcaption>
+                <figcaption>JavaScript Developer、Project Manager</figcaption>
             </figure>
         </header>
         <div class="introduction text-formatter card animated slideInLeft">
@@ -68,8 +66,8 @@
         <main class="details text-formatter card animated slideInRight">
             <h2>Introduction</h2>
 
-            <section>
-                <p>善於站在對方的立場去解決真正的核心問題，在大陸、澳洲工作的經驗，使我能夠快速適應文化和環境，過去的經歷，讓我面對困難壓力都可以積極樂觀接受挑戰。我熱愛建立新的事物，也有耐心將瑣事做好，轉入 IT 一年半，完成2件商業項目，持續學習，目標11年內成為專家</p>
+            <section class="text-formatter">
+                <p>負責任的 JavaScript Engineer 擁有獨立承接開發2件項目、RWD、React 框架的開發經驗<br>一個擅長有效率做事的實踐者</p>
             </section>
             <h2>experience</h2>
             <article class="experience">
@@ -78,48 +76,32 @@
                         <div>
                                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>
                                 Nov 2017 - Current</div>
-                                <a class="card button" title="Demo" target="_blank" href="https://youtu.be/KTePiwAD9Z0">Demo
-                                    <img src="http://s01.calm9.com/qrcode/2018-03/OCD5F5JZ3S.png" alt="Demo">
-                                </a>
+                                
                     </h4>
                     <main>
                         <h3>台灣聖昱股份有限公司--Javascript Developer</h3>
-                        <ul>Line ChatBot 代購聊天機器人 
-                            <li>
-                                
-                            </li>
-                            <li>客戶為代購業者想要經營自己的會員，在預算及時間有限的情況下，我提出使用 Line@ 作為 Client，Heroku 作為 Server 採用 Express 搭建 RESTfulAPI</li>
-                            <li>使用node-Crawler清理商品數據、取得 WeatherAPI 並通過 Promise 傳回，透過 Line MessageAPI 使用戶就像和朋友聊天的方式取得產品資訊、圖片</li>
-                            <li>使用 RegExp 辨別用戶關鍵字，實現了[地址查天氣, 商品搜尋, 熱門產品展示, 購物車, 客戶即時服務]</li>
-                            <li>而為了讓客戶在初期可以直覺管理訂單資訊，將訂單存到 SheetsAPI</li>
-                            <li>另外操作 SheetsAPI 時發現延遲近3秒，特別用 Memory Cache 緩存技巧儲存購物車狀態，減少對存取的依賴</li>
-                            <li>我嘗試用 Agile 模式開發，並先確立技術困難點和業務邏輯，在每次 Sprint 和客戶溝通引導真正需求，遇到最大的困難就是DeBug，因為 Line 只接收 Https 而 Error
-                                只有返回 400，所以一開始先測試錯誤得知問題，找到 ngrok 解決本地端 Debug 問題</iv>
-    <li>開發前先快速 Review Line Official Documentation 發現了可以讓客戶在群發信息給粉絲過程，節省開支的方法，並增加了客戶開發需求，達到雙贏的結果</li>
-    </ul>
+                        <ul>
+                            <li>為客戶分析需求、規劃流程、制定架構，提出 Agile 的最小可行方案</li>
+                            <li>確認方案後，制定甘特圖，並在時間內完成 Sprint 目標</li>
+                            <li>展示 Sprint 成果給客戶，進行微調並制定下個方案</li>
+                        </ul>
+                        <ul><strong>Line ChatBot 代購聊天機器人</strong>
+                            <li>搭建 RESTfulAPI 開發具有識別關鍵字的 Crawler 爬蟲，且不造成對方負擔</li>
+                            <li>開發自動化訂單管理系統，並使用 Memcache 方法，減少66%的請求，提高3倍的效能</li>
+                        </ul>
     </main>
     <h4 class="history">
         <div>
                 <i class="fa fa-calendar fa-fw w3-margin-right"></i>
                 May 2017 - Nov 2017</div>
-                
-                <a class="card button" title="Demo" target="_blank" href="https://youtu.be/ah5u3L3HKog">Demo
-                        <img src="http://s01.calm9.com/qrcode/2018-03/S8QKCQJGXH.png" alt="Demo">
-                </a>
     </h4>
     <main>
 
-        <ul>Law Story Mobile App 法律教育資訊-法者App 
-            <li>
-                
-            </li>
-            <li>客戶為多位律師想在兩岸建立法律教育並透過App即時查看案件、提供律師服務等，採用 React Native 並通過組件化開發，即使在多次需求更改，重構，開發時程都可以控制，當每次 Review 客戶需求更動時，我使用
-                Expo 讓參與者無論是 Android、IOS 手機操作 App 時，透過 Hot update 所有人就可以獲得反饋。</li>
-            <li>共完成7個 Pages 其中</li>
-            <li>登入註冊：使用 AsyncStorage 管理登入狀態，透過 RegExp 在 Client 驗證輸入是否正確，並在 Server 再次驗證後存入 MongoDB</li>
-            <li>法律快訊：使用和 探探App 一樣的卡片式滑動，通過左右滑動可以極大的在介面展示資訊，減少誤觸和按鈕空間，更加直覺</li>
-            <li>Server 使用 Express 搭建 RESTfulAPI 建立在初期數據資源缺乏時，故事微影片透過 YoutubeAPI 取得，教師資料和法律快訊都使用 node-Crawler 爬取客戶合作方網站</li>
-            <li>遇到的困難點是 RN 較臃腫，雖然開源組件很多，但如同 Web 引入 jQuery，在 App 精簡化的時代，透過 Custom Component 來解決</li>
+        <ul><strong>Law Education 法律教育資訊-法者App</strong>
+            <li>使用 React Native 並佈署測試上市環境，使客戶可立即測試新功能</li>
+            <li>建立安全的登入註冊環境，效率良好的驗證機制</li>
+            <li>設計具有 UX 的滑動選項，適度預加載提高手機流暢體驗</li>
+            <li>Custom Component 降低外部依賴，改善了 App size</li>
         </ul>
     </main>
     </span>
@@ -127,9 +109,6 @@
         <h4 class="history">
             <div><i class="fa fa-calendar fa-fw w3-margin-right"></i>
                 Sep 2015 - May 2017</div>
-            <a class="card button" title="Demo" target="_blank" href="http://www.taiwanfestival.net/20151.html">Demo
-                <img src="http://s01.calm9.com/qrcode/2018-03/TBW3ZYUSLT.png" alt="Demo">
-            </a>
         </h4>
         <main>
 

@@ -62,19 +62,22 @@ const infor = {
   document.getElementById("learning").innerHTML = learningData;
   
   /**
-   * 
+   *  Projects
    */
   const projectsData = {
-    "Line ChatBot 代購":"https://youtu.be/KTePiwAD9Z0",
-    "法律教育資訊-法者App":"https://youtu.be/ah5u3L3HKog",
-    "Taiwan Festival":"http://www.taiwanfestival.net/20151.html"
+    "Line ChatBot":["https://youtu.be/KTePiwAD9Z0","http://s01.calm9.com/qrcode/2018-03/OCD5F5JZ3S.png"],
+    "法者App":["https://youtu.be/ah5u3L3HKog","http://s01.calm9.com/qrcode/2018-03/S8QKCQJGXH.png"],
+    "Taiwan Festival":["http://www.taiwanfestival.net/20151.html","http://s01.calm9.com/qrcode/2018-03/TBW3ZYUSLT.png"]
   }
+
   let projects = "<h2>projects</h2>";
   for(let obj in projectsData){
-    projects+=`<a class="" href=${projectsData[obj]} target="_blank"><div class="card button">${obj}</div></a>`
+    projects+=`<a class="card button" href=${projectsData[obj][0]} target="_blank">
+    <div>${obj}</div>
+    <img src=${projectsData[obj][1]} alt="Demo">
+    </a>`
   }
   document.getElementById("projects").innerHTML = projects;
-  
   
 /**
  * 
